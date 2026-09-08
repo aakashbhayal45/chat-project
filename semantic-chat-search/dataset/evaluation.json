@@ -1,0 +1,202 @@
+[
+  {
+    "query": "When did everyone finally settle on the destination?",
+    "correct_message_id": 510,
+    "type": "semantic"
+  },
+  {
+    "query": "Which vacation spot got approved by the group?",
+    "correct_message_id": 510,
+    "type": "semantic"
+  },
+  {
+    "query": "Where are we traveling for our group holiday?",
+    "correct_message_id": 510,
+    "type": "semantic"
+  },
+  {
+    "query": "What is the finalized contribution amount per person?",
+    "correct_message_id": 1508,
+    "type": "semantic"
+  },
+  {
+    "query": "How much expenditure was fixed for the outing?",
+    "correct_message_id": 1508,
+    "type": "semantic"
+  },
+  {
+    "query": "What time window was selected for the vacation?",
+    "correct_message_id": 2808,
+    "type": "semantic"
+  },
+  {
+    "query": "Which days did the group lock in for the journey?",
+    "correct_message_id": 2808,
+    "type": "semantic"
+  },
+  {
+    "query": "When did we decide on the trip?",
+    "correct_message_id": 510,
+    "type": "semantic"
+  },
+  {
+    "query": "What happened with the Goa plan?",
+    "correct_message_id": 500,
+    "type": "semantic"
+  },
+  {
+    "query": "Why was Shimla rejected as a destination?",
+    "correct_message_id": 501,
+    "type": "semantic"
+  },
+  {
+    "query": "Which place did everyone finally agree on?",
+    "correct_message_id": 510,
+    "type": "semantic"
+  },
+  {
+    "query": "What is the final budget per person?",
+    "correct_message_id": 1508,
+    "type": "semantic"
+  },
+  {
+    "query": "What dates were locked for the trip?",
+    "correct_message_id": 2808,
+    "type": "semantic"
+  },
+  {
+    "query": "Who suggested Manali first?",
+    "correct_message_id": 504,
+    "type": "semantic"
+  },
+  {
+    "query": "What was discussed about Rishikesh?",
+    "correct_message_id": 502,
+    "type": "semantic"
+  },
+  {
+    "query": "Who mentioned bus ticket prices for the trip?",
+    "correct_message_id": 1493,
+    "type": "semantic"
+  },
+  {
+    "query": "What did Priya say about the budget?",
+    "correct_message_id": 1508,
+    "type": "attributed"
+  },
+  {
+    "query": "What did Rahul mention about tickets?",
+    "correct_message_id": 1100,
+    "type": "attributed"
+  },
+  {
+    "query": "Show me what Aman said about the trip.",
+    "correct_message_id": 510,
+    "type": "attributed"
+  },
+  {
+    "query": "What did Priya pay using Google Pay?",
+    "correct_message_id": 800,
+    "type": "attributed"
+  },
+  {
+    "query": "What did Simran say about gym discount?",
+    "correct_message_id": 2300,
+    "type": "attributed"
+  },
+  {
+    "query": "What did Karan buy for his MacBook?",
+    "correct_message_id": 2500,
+    "type": "attributed"
+  },
+  {
+    "query": "What did Neha say about Python automation?",
+    "correct_message_id": 3200,
+    "type": "attributed"
+  },
+  {
+    "query": "What did Ravi arrange at his flat?",
+    "correct_message_id": 3600,
+    "type": "attributed"
+  },
+  {
+    "query": "What did Ankit reserve in Solang valley?",
+    "correct_message_id": 4000,
+    "type": "attributed"
+  },
+  {
+    "query": "What did Aman say about Spotify Premium?",
+    "correct_message_id": 2000,
+    "type": "attributed"
+  },
+  {
+    "query": "What did we discuss in November 2023?",
+    "correct_message_id": 50,
+    "type": "temporal"
+  },
+  {
+    "query": "What happened in November 2023?",
+    "correct_message_id": 510,
+    "type": "temporal"
+  },
+  {
+    "query": "What was discussed around March 2024?",
+    "correct_message_id": 2808,
+    "type": "temporal"
+  },
+  {
+    "query": "What did Priya say in February 2024?",
+    "correct_message_id": 1508,
+    "type": "temporal"
+  },
+  {
+    "query": "What happened in the first week of April 2024?",
+    "correct_message_id": 4000,
+    "type": "temporal"
+  },
+  {
+    "query": "What did Rahul say last month?",
+    "correct_message_id": 2798,
+    "type": "temporal"
+  },
+  {
+    "query": "What was discussed in December 2023?",
+    "correct_message_id": 800,
+    "type": "temporal"
+  },
+  {
+    "query": "Show messages from February 2024",
+    "correct_message_id": 1508,
+    "type": "temporal"
+  },
+  {
+    "query": "What did Neha confirm about leaves and dates?",
+    "correct_message_id": 2808,
+    "type": "attributed"
+  },
+  {
+    "query": "What accommodation was booked for the stay?",
+    "correct_message_id": 4000,
+    "type": "semantic"
+  },
+  {
+    "query": "How much does the Spotify family plan cost per month?",
+    "correct_message_id": 2000,
+    "type": "semantic"
+  },
+  {
+    "query": "Who is hosting the IPL match screening?",
+    "correct_message_id": 3600,
+    "type": "semantic"
+  },
+  {
+    "query": "What is the discount rate on Cult fit gym membership?",
+    "correct_message_id": 2300,
+    "type": "semantic"
+  },
+  {
+    "query": "What time does tatkal train booking start?",
+    "correct_message_id": 1100,
+    "type": "semantic"
+  }
+]

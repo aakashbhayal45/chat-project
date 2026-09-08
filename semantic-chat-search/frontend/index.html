@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Group Chat Search</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-decor">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <div class="container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="logo-area">
+                <div class="logo-icon">💬</div>
+                <div>
+                    <h1>Semantic Group Chat Search</h1>
+                    <p class="subtitle">AI-powered vector search engine for code-mixed Hinglish & English group chats</p>
+                </div>
+            </div>
+            <div class="header-badges">
+                <span class="badge badge-tech">FAISS Vector Search</span>
+                <span class="badge badge-model">MiniLM Multilingual</span>
+            </div>
+        </header>
+
+        <!-- Stats Bar -->
+        <section class="stats-card glass-panel" id="stats-panel">
+            <div class="stat-item">
+                <span class="stat-value" id="stat-messages">4,250</span>
+                <span class="stat-label">Total Messages</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-value" id="stat-participants">8</span>
+                <span class="stat-label">Participants</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <span class="stat-value" id="stat-daterange">6 Months</span>
+                <span class="stat-label">Time Span</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item highlight-stat">
+                <span class="stat-value" id="stat-top1">--%</span>
+                <span class="stat-label">Top-1 Accuracy</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item highlight-stat">
+                <span class="stat-value" id="stat-mrr">0.00</span>
+                <span class="stat-label">MRR Benchmark</span>
+            </div>
+        </section>
+
+        <!-- Search Box Section -->
+        <section class="search-section glass-panel">
+            <form id="search-form" class="search-form">
+                <div class="search-input-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" id="search-query" placeholder="Ask anything about the chat history (e.g. When did we decide on the trip?)" required autocomplete="off">
+                    <button type="submit" id="search-btn" class="btn-search">
+                        <span>Search</span>
+                        <div class="spinner" id="search-spinner" style="display: none;"></div>
+                    </button>
+                </div>
+            </form>
+
+            <!-- Example Queries -->
+            <div class="example-queries">
+                <span class="examples-title">Try asking:</span>
+                <div class="chips-wrapper">
+                    <button class="chip-btn" data-query="When did we decide on the trip?">"When did we decide on the trip?"</button>
+                    <button class="chip-btn" data-query="What did Priya say about the budget?">"What did Priya say about the budget?"</button>
+                    <button class="chip-btn" data-query="What did we discuss last month?">"What did we discuss last month?"</button>
+                    <button class="chip-btn" data-query="Which destination did everyone finally agree on?">"Which destination did everyone finally agree on?"</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Error Alert -->
+        <div id="error-alert" class="alert-box error-box" style="display: none;"></div>
+
+        <!-- Generated Answer Card -->
+        <section id="answer-card" class="answer-card glass-panel" style="display: none;">
+            <div class="answer-header">
+                <span class="sparkle-icon">✨</span>
+                <span class="answer-title">Generated Answer</span>
+                <span id="query-type-badge" class="badge badge-type">Semantic</span>
+            </div>
+            <p id="answer-text" class="answer-body">--</p>
+        </section>
+
+        <!-- Search Results Section -->
+        <section id="results-section" style="display: none;">
+            <h2 class="section-title">Top Matching Results</h2>
+            <div id="results-list" class="results-list"></div>
+        </section>
+
+        <!-- Benchmarks Detail Section -->
+        <section class="benchmark-section glass-panel">
+            <div class="benchmark-header">
+                <h2>System Benchmark & Evaluation Metrics</h2>
+                <span class="badge badge-subtle">40 Benchmark Queries</span>
+            </div>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <span class="metric-title">Top-1 Accuracy</span>
+                    <span class="metric-num" id="bm-top1">--</span>
+                    <span class="metric-desc">Correct message returned as #1 result</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-title">Top-3 Accuracy</span>
+                    <span class="metric-num" id="bm-top3">--</span>
+                    <span class="metric-desc">Correct message within Top-3 results</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-title">Top-5 Accuracy</span>
+                    <span class="metric-num" id="bm-top5">--</span>
+                    <span class="metric-desc">Correct message within Top-5 results</span>
+                </div>
+                <div class="metric-card">
+                    <span class="metric-title">MRR (Mean Reciprocal Rank)</span>
+                    <span class="metric-num" id="bm-mrr">--</span>
+                    <span class="metric-desc">Average reciprocal rank score</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>Semantic Group Chat Search • Built with FastAPI, FAISS, Sentence Transformers & Vanilla JS</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
